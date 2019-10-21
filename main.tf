@@ -1,15 +1,15 @@
 # Terraform state will be stored in S3
 terraform {
   backend "s3" {
-    bucket = "terraform-bucket-vijith-test"
+    bucket = "shathedawn"
     key    = "terraform.tfstate"
-    region = "us-east-1"
+    region = "us-east-2"
   }
 }
 
 provider "aws" {
   version = "~> 2.0"
-  region  = "us-east-1"
+  region  = "us-east-2"
 }
 
 # Create EC2 instance
